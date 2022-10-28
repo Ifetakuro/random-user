@@ -1,0 +1,36 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .welcome,
+.home .image-info {
+  flex: 1;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.home .image-info {
+  text-align: center;
+}
+
+.image img {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+@media screen and (max-width: 968px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
